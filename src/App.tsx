@@ -5,16 +5,13 @@ import './App.css';
 function App() {
   return (
       <>
-        {/*Inline way of defining styles*/}
-        <div style={{backgroundColor: "red",
-          padding: 10, textAlign: "center"}}>
-          Inline CSS Box</div>
-        <br/>
-        {/*Using external CSS class of defining styles*/}
-        <div className="box">External CSS Box</div>
-        <br/>
-        {/*This is what tailwind CSS uses kind of atomic utility classes*/}
-        <div className="bg-red p-10 text-center">Tailwind CSS Utility Class Box</div>
+          <div className="text-red-900 text-center">Using Pre-defined Tailwind CSS Utility classes as it is</div>
+          <br/>
+          <div className="text-red-300 text-center">Using Pre-defined Tailwind CSS Utility classes as it is</div>
+          <br/>
+          <div className="text-primary text-center">Using customized Tailwind utility CSS classes</div>
+          <br/>
+          <div className="text-secondary text-center">Using customized Tailwind utility CSS classes</div>
       </>
   );
 }
