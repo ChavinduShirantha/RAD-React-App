@@ -1,10 +1,15 @@
 import {Component} from "react";
+import {Route, Routes} from "react-router-dom";
+import {About} from "../../pages/About/About";
 
 export class MainContent extends Component {
     render() {
         return (
-            <h1 className="text-4xl text-center text-tertiary">
-                This is Main Content!</h1>
+            <div className="mx-auto">
+                <Routes>
+                    <Route path="/about" Component={About}></Route>
+                </Routes>
+            </div>
         );
     }
 }

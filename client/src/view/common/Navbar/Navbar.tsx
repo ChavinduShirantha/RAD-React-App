@@ -1,6 +1,7 @@
 import {Component} from "react";
 // @ts-ignore
 import logo from "../../../images/icon.png"
+import {Link} from "react-router-dom";
 
 export class Navbar extends Component {
     render() {
@@ -22,7 +23,7 @@ export class Navbar extends Component {
                         Contact
                     </li>
                     <li className="mr-2 text-[18px] font-bold text-[#e6f0e6] hover:text-green-400">
-                        About
+                        <Link to="/about">About</Link>
                     </li>
                     <li className="mr-2 text-[18px] font-bold text-[#e6f0e6] hover:text-green-400">
                         My Cart
