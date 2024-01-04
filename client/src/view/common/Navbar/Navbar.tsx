@@ -26,7 +26,7 @@ export class Navbar extends Component {
                         <Link to="/about">About</Link>
                     </li>
                     <li className="mr-2 text-[18px] font-bold text-[#e6f0e6] hover:text-green-400">
-                        My Cart
+                        <Link to="/shoppingCart">My Cart</Link>
                     </li>
                 </ul>
 
