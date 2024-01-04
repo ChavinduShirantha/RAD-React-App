@@ -5,6 +5,10 @@ import spinach from "../../../images/products/spinach.png";
 import tomato from "../../../images/products/tomato.png";
 // @ts-ignore
 import beans from "../../../images/products/beans.png";
+// @ts-ignore
+import cabbage from "../../../images/products/cabbage.png";
+// @ts-ignore
+import carrot from "../../../images/products/carrot.png";
 
 export class Home extends Component {
     render() {
@@ -70,14 +74,14 @@ export class Home extends Component {
 
                     <div className=" w-64 h-72 mr-5 rounded mb-2 justify-center items-center border-black border-[1px]">
                         <div>
-                            <img className="h-52 m-1" src={tomato} alt=""/>
+                            <img className="h-52 m-1" src={cabbage} alt=""/>
                         </div>
                         <div className="flex justify-center">
                             <div>
-                                <h3 className="text-secondary text-[16px] pl-2">Tomato</h3>
+                                <h3 className="text-secondary text-[16px] pl-2">Cabbage</h3>
                             </div>
                             <div className="bg-yellow-300 ml-1 p-[0.3px] rounded-lg pr-2">
-                                <h3 className="text-[16px] pl-2">300
+                                <h3 className="text-[16px] pl-2">200
                                     <small className="text-[10px]">LKR</small></h3>
                             </div>
                         </div>
@@ -88,14 +92,14 @@ export class Home extends Component {
                     </div>
                     <div className=" w-64 h-72 mr-5 rounded mb-2 justify-center items-center border-black border-[1px]">
                         <div>
-                            <img className="h-52 m-1" src={spinach} alt=""/>
+                            <img className="h-52 m-1" src={carrot} alt=""/>
                         </div>
                         <div className="flex justify-center">
                             <div>
-                                <h3 className="text-secondary text-[16px] pl-2">Spinach</h3>
+                                <h3 className="text-secondary text-[16px] pl-2">Carrot</h3>
                             </div>
                             <div className="bg-yellow-300 ml-1 p-[0.3px] rounded-lg pr-2">
-                                <h3 className="text-[16px] pl-2">200
+                                <h3 className="text-[16px] pl-2">500
                                     <small className="text-[10px]">LKR</small></h3>
                             </div>
                         </div>
