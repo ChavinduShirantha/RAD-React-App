@@ -34,7 +34,7 @@ export class Navbar extends Component {
                 <button className="text-[16px] text-[#e6f0e6]
                                    bg-green-400 pl-5 pr-5
                                    hover:text-tertiary rounded-xl">
-                    Sign In
+                    <Link to="/login">Sign In</Link>
                 </button>
             </div>
         );
