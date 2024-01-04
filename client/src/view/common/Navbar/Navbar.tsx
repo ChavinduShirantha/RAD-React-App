@@ -17,7 +17,7 @@ export class Navbar extends Component {
 
                 <ul className="list-none flex mt-1">
                     <li className="mr-2 text-[18px] font-bold text-[#e6f0e6] hover:text-green-400">
-                        Home
+                        <Link to="/">Home</Link>
                     </li>
                     <li className="mr-2 text-[18px] font-bold text-[#e6f0e6] hover:text-green-400">
                         Contact
