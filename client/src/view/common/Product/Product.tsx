@@ -1,0 +1,39 @@
+import {Component} from "react";
+// @ts-ignore
+import carrot from "../../../images/products/carrot.png";
+
+interface ProductProps {
+    data: any
+}
+
+export class Product extends Component<ProductProps> {
+    constructor(props: ProductProps) {
+        super(props);
+    }
+
+    render() {
+        const {data} = this.props;
+        const image = require('../../../images/products/' + data.image);
+
+        return (
+            <div className=" w-64 h-72 mr-5 rounded mb-2 justify-center items-center border-black border-[1px]">
+                <div>
+                    <img className="h-52 m-1" src={image} alt=""/>
+                </div>
+                <div className="flex justify-center">
+                    <div>
+                        <h3 className="text-secondary text-[16px] pl-2">{data.name}</h3>
+                    </div>
+                    <div className="bg-yellow-300 ml-1 p-[0.3px] rounded-lg pr-2">
+                        <h3 className="text-[16px] pl-2">{data.price}
+                            <small className="text-[10px]">{data.currency}</small></h3>
+                    </div>
+                </div>
+                <div className=" justify-center">
+                    <button className="w-full h-auto mt-1 p-2 bg-secondary text-[17px] rounded">Add to Cart
+                    </button>
+                </div>
+            </div>
+        );
+    }
+}
