@@ -53,7 +53,7 @@ export class Product extends Component<ProductProps,ProductState> {
     }
     private addToCartOnClick = () => {
         this.setState({isActive: !this.state.isActive}, () => {
-            console.log(this.state.isActive);
+            // console.log(this.state.isActive);
             // alert(this.state.isActive);
         })
     }
