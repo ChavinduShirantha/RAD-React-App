@@ -1,0 +1,40 @@
+
+const productsList=[
+    {
+        "id": 1,
+        "name":"Spinach",
+        "price": 200,
+        "currency": "LKR",
+        "image": "spinach.png"
+    },
+    {
+        "id": 2,
+        "name":"Tomato",
+        "price": 300,
+        "currency": "LKR",
+        "image": "tomato.png"
+    },
+    {
+        "id": 3,
+        "name":"Bean",
+        "price": 250,
+        "currency": "LKR",
+        "image": "beans.png"
+    },
+    {
+        "id": 4,
+        "name":"Cabbage",
+        "price": 300,
+        "currency": "LKR",
+        "image": "cabbage.png"
+    },
+    {
+        "id": 5,
+        "name":"Carrot",
+        "price": 200,
+        "currency": "LKR",
+        "image": "carrot.png"
+    }
+];
+
+module.exports={productsList};
