@@ -34,6 +34,25 @@ const ProductController={
             console.error(error);
             res.status(500).json({error: 'Something went wrong'})
         }
+    },
+
+    updateProduct: async function (req, res, next) {
+        try {
+            const productId = req.params.id;
+            const productData = req.body;
+            const updatedProduct = await Product.findOneAndUpdate({
+                id: productId
+            }, productData, {new: true});
+
+            if (!updatedProduct) {
+                return res.status(404).json({error: 'Product Not Found'});
+            }
+
+            res.status(200).json(updatedProduct);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({error: 'Something went wrong'})
+        }
     }
 
 }
